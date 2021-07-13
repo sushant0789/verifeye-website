@@ -40,7 +40,7 @@ h6 {
 }
 
 .navbar {
-  background-color: #572680;
+  background-color: #711e92;
   position: fixed;
   top: 0;
   width: 100%;
@@ -48,10 +48,11 @@ h6 {
 }
 
 .navbar .container .row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
+}
+
+#nav {
+  padding: 0 0 0 100px;
 }
 
 #nav a {
@@ -59,7 +60,7 @@ h6 {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 20px;
+  padding: 28px 20px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -69,11 +70,10 @@ h6 {
 #nav a:focus,
 #nav a.active {
   background: #fff;
-  color: #572680;
+  color: #711e92;
 }
 
-.mobile-menu,
-.navbar .logo {
+.mobile-menu {
   display: none;
 }
 
@@ -94,6 +94,24 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar .logo img {
+  max-width: 190px;
+  width: 100%;
 }
 
 #banner {
@@ -203,7 +221,7 @@ h6 {
   z-index: 1;
   padding: 35px;
   content: "";
-  background-color: #572680;
+  background-color: #711e92;
 }
 
 .one-interface .yellow-box {
@@ -226,9 +244,9 @@ h6 {
 }
 
 .one-interface .verification-process-number.last {
-  color: #572680;
+  color: #711e92;
   background-color: #fff;
-  border: 4px solid #572680;
+  border: 4px solid #711e92;
   font-weight: bold;
 }
 
@@ -248,12 +266,12 @@ h6 {
 
 .one-interface .three-veri h2 {
   font-size: 2rem;
-  color: #572680;
+  color: #711e92;
 }
 
 .three-veri-h4 {
   font-size: 1.6rem;
-  color: #572680;
+  color: #711e92;
 }
 
 .solution-left {
@@ -261,7 +279,7 @@ h6 {
 }
 
 .title-h2 {
-  color: #572680;
+  color: #711e92;
   position: relative;
   font-size: 3.3rem;
   padding: 0 0 25px;
@@ -282,12 +300,12 @@ h6 {
   width: 70px;
   height: 5px;
   border-radius: 10px;
-  background-color: #572680;
+  background-color: #711e92;
   content: "";
 }
 
 .title-h3 {
-  color: #572680;
+  color: #711e92;
   font-size: 2.5rem;
   padding: 0;
   margin: 0;
@@ -299,7 +317,7 @@ h6 {
 }
 
 .solution-ul li {
-  color: #572680;
+  color: #711e92;
   font-size: 1.3rem;
   padding: 0 0 0 10px;
   line-height: 21px;
@@ -340,7 +358,7 @@ h6 {
 }
 
 .verification-ol li {
-  color: #572680;
+  color: #711e92;
   font-size: 1.3rem;
   padding: 15px 0 15px 50px;
   line-height: 21px;
@@ -366,7 +384,7 @@ h6 {
   line-height: 18px;
   width: 35px;
   height: 35px;
-  background: #572680;
+  background: #711e92;
   border-radius: 999px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -428,11 +446,11 @@ h6 {
 }
 
 .kento-ident-right {
-  background-color: #572680;
+  background-color: #711e92;
 }
 
 .kento-ident-right .play-btn {
-  color: #572680;
+  color: #711e92;
 }
 
 .verification-solution-right,
@@ -468,7 +486,7 @@ h6 {
   z-index: 1;
   padding: 35px;
   content: "";
-  background-color: #572680;
+  background-color: #711e92;
 }
 
 .verification-process-content .yellow-box {
@@ -517,7 +535,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #572680;
+  background-color: #711e92;
   color: #fff;
   font-size: 2.5rem;
   border-radius: 50%;
@@ -526,7 +544,7 @@ h6 {
 
 .title-h4 {
   font-size: 2.5rem;
-  color: #572680;
+  color: #711e92;
   line-height: 32px;
   margin: 0;
   padding: 0 0 25px;
@@ -545,7 +563,7 @@ h6 {
 
 .verification-process-para {
   font-size: 1.2rem;
-  color: #572680;
+  color: #711e92;
   width: 85%;
   line-height: 20px;
   padding: 0 0 20px;
@@ -569,7 +587,7 @@ h6 {
 
 .title-h5 {
   font-size: 1.2rem;
-  color: #572680;
+  color: #711e92;
   width: 67%;
   margin: 0;
   padding: 50px 0 60px;
@@ -588,7 +606,7 @@ h6 {
 }
 
 .document-validation-ul li {
-  border: 2px solid #572680;
+  border: 2px solid #711e92;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,7 +620,7 @@ h6 {
   height: 110px;
   width: 110px;
   font-size: 1rem;
-  color: #572680;
+  color: #711e92;
   text-align: center;
   font-size: 1.2rem;
   line-height: 18px;
@@ -771,7 +789,7 @@ h6 {
 .advance-check-right {
   width: 100%;
   max-width: 20%;
-  background-color: #572680;
+  background-color: #711e92;
   position: relative;
 }
 
@@ -837,7 +855,7 @@ h6 {
 
 .advance-check-ul li {
   font-size: 1.2rem;
-  color: #572680;
+  color: #711e92;
   padding: 0 0 0 30px;
 }
 
@@ -858,7 +876,7 @@ h6 {
   z-index: 1;
   padding: 35px;
   content: "";
-  background-color: #572680;
+  background-color: #711e92;
 }
 
 .innovative-product-features .yellow-box {
@@ -880,7 +898,7 @@ h6 {
   display: inline-block;
   width: 46%;
   max-width: 100%;
-  color: #572680;
+  color: #711e92;
   font-size: 1.2rem;
   padding: 3px 0 15px 40px;
   position: relative;
@@ -894,7 +912,7 @@ h6 {
   font-size: 1rem;
   display: inline-block;
   border-radius: 50%;
-  border: 1px solid #572680;
+  border: 1px solid #711e92;
   margin: 0 5px 0 0;
   position: absolute;
   left: 0;
@@ -987,7 +1005,7 @@ h6 {
 }
 
 .contact-list a {
-  color: #572680;
+  color: #711e92;
   font-size: 1.2rem;
   margin: 0 0 20px;
   display: inline-block;
@@ -1004,12 +1022,12 @@ h6 {
 }
 
 .contact-bottom-left .title-h5 a {
-  color: #572680;
+  color: #711e92;
   font-weight: bold;
 }
 
 .contact-bottom-right {
-  background-color: #572680;
+  background-color: #711e92;
   width: 100%;
   max-width: 30%;
   position: relative;
@@ -1145,13 +1163,11 @@ h6 {
 }
 
 .dropdown {
-  position: absolute;
-  right: 0;
-  background-color: #572680;
+  background-color: #711e92;
 }
 
 .english-flag {
-  padding: 15px 10px 0;
+  padding: 20px 10px 0;
 }
 
 .english-flag img {
@@ -1339,7 +1355,7 @@ h6 {
     width: 48%;
   }
   .online-gaming-right {
-    background-color: #572680;
+    background-color: #711e92;
     padding-bottom: 200px;
   }
   .online-gaming-right .result {
@@ -1515,7 +1531,7 @@ h6 {
     width: 48%;
   }
   .online-gaming-right {
-    background-color: #572680;
+    background-color: #711e92;
     padding-bottom: 200px;
   }
   .online-gaming-right .result {
@@ -1618,7 +1634,7 @@ h6 {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #572680;
+    background-color: #711e92;
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -1854,7 +1870,7 @@ h6 {
     width: 100%;
   }
   .online-gaming-right {
-    background-color: #572680;
+    background-color: #711e92;
     padding-bottom: 200px;
   }
   .online-gaming-right .result {
