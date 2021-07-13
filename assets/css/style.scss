@@ -50,7 +50,7 @@ h6 {
 }
 
 #nav {
-  padding: 0 0 0 100px;
+  padding: 0 0 0 40px;
   a {
     float: left;
     display: block;
@@ -82,6 +82,7 @@ h6 {
     margin-right: -15px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 .navbar .logo {
@@ -91,6 +92,20 @@ h6 {
   img {
     max-width: 190px;
     width: 100%;
+  }
+}
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 50px;
+    color: #711e92;
+    padding: 10px 20px;
+    text-transform: uppercase;
   }
 }
 #banner {
@@ -624,12 +639,20 @@ h6 {
 }
 
 .save-data-left {
-  padding: 150px 100px;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   &.german .title-h2 {
     width: 60%;
   }
   .title-h2 {
     width: 50%;
+  }
+  &.inner-page {
+    .title-h2 {
+      width: auto;
+    }
   }
   .title-h5 {
     width: 70%;
@@ -771,6 +794,9 @@ h6 {
 
 .online-gaming-left {
   padding: 150px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .title-h5 {
     width: 75%;
   }
@@ -815,7 +841,10 @@ h6 {
 }
 
 .who-we-are-right {
-  padding: 150px 100px 0;
+  padding: 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .title-h2 {
     width: 30%;
   }
@@ -828,37 +857,45 @@ h6 {
   }
 }
 
-.contact-top-left {
-  padding: 150px 50px 0 100px;
+#contact .title-h2 {
+  padding-top: 70px;
 }
-.contact-list {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 0;
-  .title-h3 {
-    line-height: 30px;
-  }
-  a {
-    color: #711e92;
-    font-size: 1.2rem;
-    margin: 0 0 20px;
-    display: inline-block;
-  }
-}
-
-.contact-bottom-left {
+.contact-top {
   width: 100%;
-  max-width: 70%;
-  padding: 70px 50px 40px 100px;
+  padding: 50px 0;
+  display: flex;
+  .col-md-4 {
+    width: 33.33%;
+    padding: 0 15px;
+    flex: 1;
+  }
+  .title-h4 {
+    padding-bottom: 35px;
+  }
   .title-h5 {
-    padding: 30px 0;
+    padding: 0;
+    width: auto;
+    line-height: 1.8rem;
     a {
       color: #711e92;
       font-weight: bold;
     }
   }
 }
-.contact-bottom-right {
+.contact-ul {
+  padding: 0 0 15px;
+  margin: 0;
+  li {
+    list-style: none;
+    padding: 0 0 10px;
+    a {
+      color: #711e92;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+  }
+}
+.contact-top-right {
   background-color: #711e92;
   width: 100%;
   max-width: 30%;
@@ -885,6 +922,33 @@ h6 {
     }
   }
 }
+.text-center {
+  text-align: center;
+}
+.width-100 {
+  width: 100%;
+  .title-h2 {
+    display: inline;
+    margin: 0;
+    padding: 30px 0 0;
+    &::after {
+      display: none;
+    }
+  }
+  .title-h5 {
+    width: auto;
+    padding: 15px 0 50px;
+  }
+}
+.contact-bottom {
+  display: flex;
+  padding: 0 0 30px;
+  .col-md-4 {
+    width: 33.33%;
+    padding: 0 15px;
+    flex: 1;
+  }
+}
 
 .solution-right,
 .verification-left,
@@ -895,7 +959,6 @@ h6 {
 .save-data-right,
 .online-gaming-right,
 .who-we-are-right,
-.contact-top-right,
 .banner-left {
   display: flex;
   flex-direction: column;
@@ -974,7 +1037,9 @@ h6 {
 }
 
 .english-flag {
-  padding: 20px 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   img {
     width: 35px;
     border-radius: 50%;
@@ -1017,6 +1082,44 @@ h6 {
   cursor: pointer;
 }
 
+.toggle {
+  font-size: 30px;
+  color: #fff;
+  text-align: right;
+  cursor: pointer;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #711e92;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+  }
+}
+
+.features-page,
+.about-page {
+  padding: 79px 0 0;
+}
+
 /* Responsive Media Queries */
 
 /* For Ipad */
@@ -1024,8 +1127,40 @@ h6 {
   #nav a {
     padding: 20px 12px;
   }
-  .solution-ul li br {
+  #nav,
+  .solution-ul li br,
+  .contact-header {
     display: none;
+  }
+  .navbar {
+    .container .row {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .logo {
+      align-self: flex-start;
+      padding: 15px 15px 8px;
+      display: inline;
+      order: 1;
+      img {
+        max-width: 140px;
+      }
+    }
+  }
+  .english-flag {
+    order: 2;
+    right: 55px;
+  }
+  .dropdown {
+    .menu {
+      padding: 0 0 0 10px;
+    }
+  }
+  .mobile-menu {
+    display: inline-block;
+    align-self: flex-end;
+    padding: 15px 15px 10px;
+    order: 3;
   }
   .solution-ul {
     padding-bottom: 30px;
@@ -1065,7 +1200,6 @@ h6 {
   .save-data-right img,
   .online-gaming-right img,
   .who-we-are-left img,
-  .contact-top-right img,
   .banner-left img {
     height: 100%;
     width: 100%;
@@ -1169,8 +1303,14 @@ h6 {
       padding: 20px 0;
     }
   }
-  .contact-bottom-left {
-    padding: 80px 30px 30px 30px;
+  .contact-top-right {
+    .logo,
+    ul {
+      right: 30px;
+    }
+  }
+  .contact-top {
+    padding: 80px 15px 60px 15px;
     .title-h2 {
       width: 70%;
     }
@@ -1191,6 +1331,10 @@ h6 {
   }
   .verification-process-para.german {
     min-height: 100px;
+  }
+  .features-page,
+  .about-page {
+    padding: 60px 0 0;
   }
 }
 
@@ -1232,7 +1376,6 @@ h6 {
   .save-data-right img,
   .online-gaming-right img,
   .who-we-are-left img,
-  .contact-top-right img,
   .banner-left img {
     height: 100%;
   }
@@ -1336,7 +1479,7 @@ h6 {
     padding: 40px 0 0;
     width: 100%;
   }
-  .contact-bottom-left {
+  .contact-top {
     padding-left: 50px;
     .title-h2 {
       width: 60%;
@@ -1361,7 +1504,8 @@ h6 {
 
 @media only screen and (max-width: 767px) {
   #nav,
-  .solution-ul li br {
+  .solution-ul li br,
+  .contact-header {
     display: none;
   }
 
@@ -1382,7 +1526,6 @@ h6 {
   }
   .english-flag {
     order: 2;
-    padding: 15px 0 0;
     right: 55px;
   }
   .dropdown {
@@ -1396,38 +1539,7 @@ h6 {
     padding: 15px 15px 10px;
     order: 3;
   }
-  .toggle {
-    font-size: 30px;
-    color: #fff;
-    text-align: right;
-    cursor: pointer;
-  }
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #711e92;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #fff;
-      display: block;
-      transition: 0.3s;
-    }
-    .closebtn {
-      position: absolute;
-      top: 0;
-      right: 10px;
-      font-size: 36px;
-    }
-  }
+
   #banner {
     padding: 60px 0 0;
   }
@@ -1562,8 +1674,8 @@ h6 {
   .validation-security-features-right,
   .save-data-left .title-h5,
   .who-we-are-right .title-h5,
-  .contact-bottom-left,
-  .contact-bottom-right {
+  .contact-top,
+  .contact-top-right {
     max-width: none;
     width: 100%;
   }
@@ -1638,14 +1750,20 @@ h6 {
       padding: 0 0 25px;
     }
   }
-  .contact-bottom-left {
-    padding: 80px 30px 30px 30px;
+  .contact-top {
+    padding: 30px 15px;
+    flex-direction: column;
+    .col-md-4 {
+      width: 100%;
+      flex: none;
+    }
     .title-h5 {
       width: auto;
     }
   }
-  .contact-bottom-right {
+  .contact-top-right {
     height: 100px;
+    margin: 30px 0 0;
     .logo {
       bottom: 30px;
       left: 30px;
@@ -1657,5 +1775,20 @@ h6 {
   }
   .modal-content {
     width: 90%;
+  }
+  #contact .title-h2 {
+    padding-top: 30px;
+  }
+  .contact-bottom {
+    padding: 0 15px;
+    flex-direction: column;
+    .col-md-4 {
+      width: 100%;
+      flex: none;
+    }
+  }
+  .features-page,
+  .about-page {
+    padding: 60px 0 0;
   }
 }
