@@ -46,6 +46,7 @@ h6 {
   z-index: 99;
   .container .row {
     position: relative;
+    justify-content: space-around;
   }
 }
 
@@ -81,8 +82,6 @@ h6 {
     margin-left: -15px;
     margin-right: -15px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
   }
 }
 .navbar .logo {
@@ -1119,6 +1118,21 @@ h6 {
 .about-page,
 .solution-page {
   padding: 79px 0 0;
+}
+#our-modular {
+  padding: 100px 0;
+  .container .row {
+    flex-direction: column;
+  }
+  .title-h2::after {
+    display: none;
+  }
+}
+.our-modular-img {
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Responsive Media Queries */

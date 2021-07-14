@@ -49,6 +49,8 @@ h6 {
 
 .navbar .container .row {
   position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #nav {
@@ -90,12 +92,6 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .navbar .logo {
@@ -1386,6 +1382,26 @@ h6 {
 .about-page,
 .solution-page {
   padding: 79px 0 0;
+}
+
+#our-modular {
+  padding: 100px 0;
+}
+
+#our-modular .container .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#our-modular .title-h2::after {
+  display: none;
+}
+
+.our-modular-img img {
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Responsive Media Queries */
