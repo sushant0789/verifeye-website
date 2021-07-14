@@ -107,12 +107,40 @@ h6 {
     text-transform: uppercase;
   }
 }
-#banner {
-  padding: 63px 0 0;
-}
 .banner-left {
   max-width: 50%;
   width: 100%;
+  position: relative;
+  text-align: center;
+  h1 {
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    color: #fff;
+    font-size: 4rem;
+    width: 100%;
+  }
+  .solution-btn {
+    bottom: 70px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    a {
+      background-color: #711e92;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      padding: 10px 30px;
+      font-family: "rokkittbold";
+      font-size: 1.2rem;
+      border-radius: 3px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #fff;
+        color: #711e92;
+      }
+    }
+  }
   img {
     max-width: 100%;
   }
@@ -193,10 +221,74 @@ h6 {
   width: 100%;
 }
 
-.one-interface {
-  padding: 120px 100px 40px;
+.one-interface-left {
+  padding: 50px;
+
+  .title-h2 {
+    padding: 0 0 20px;
+    margin-bottom: 40px;
+  }
+  .verification-process-number {
+    margin: 0 40px 0 0;
+    &.last {
+      color: #711e92;
+      background-color: #fff;
+      border: 4px solid #711e92;
+      font-weight: bold;
+    }
+  }
+  .three-veri {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0 30px;
+    h2 {
+      font-size: 2rem;
+      color: #711e92;
+    }
+  }
+}
+.three-veri-h4 {
+  font-size: 1.6rem;
+  color: #711e92;
+}
+.one-interface-right {
   position: relative;
-  width: 100%;
+  img {
+    max-width: 100%;
+  }
+  .title-h4 {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.8rem;
+    width: 35%;
+  }
+  .link-buttons {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    a {
+      cursor: pointer;
+      background-color: #fff;
+      color: #711e92;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 0 10px;
+      font-family: "rokkittbold";
+      font-size: 1.2rem;
+      transition: all 0.3s;
+      border-radius: 0 3px 3px 0;
+      &:hover {
+        background-color: #711e92;
+        color: #fff;
+      }
+    }
+  }
   .violet-box {
     position: absolute;
     top: 40px;
@@ -215,33 +307,6 @@ h6 {
     content: "";
     background-color: #fcd647;
   }
-  .title-h2 {
-    padding: 0 0 50px;
-    margin-bottom: 50px;
-  }
-  .verification-process-number {
-    margin: 0 40px 0 0;
-    &.last {
-      color: #711e92;
-      background-color: #fff;
-      border: 4px solid #711e92;
-      font-weight: bold;
-    }
-  }
-  .three-veri {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0 0 40px;
-    h2 {
-      font-size: 2rem;
-      color: #711e92;
-    }
-  }
-}
-.three-veri-h4 {
-  font-size: 1.6rem;
-  color: #711e92;
 }
 
 .solution-left {
@@ -1113,7 +1178,7 @@ h6 {
     font-size: 36px;
   }
 }
-
+#banner,
 .features-page,
 .about-page,
 .solution-page {
@@ -1316,9 +1381,13 @@ h6 {
   .save-data-right img,
   .online-gaming-right img,
   .who-we-are-left img,
-  .banner-left img {
+  .banner-left img,
+  .one-interface-right img {
     height: 100%;
     width: 100%;
+  }
+  .one-interface-left .three-veri h2 {
+    width: 60%;
   }
   .verification-right .title-h2 {
     padding: 0 0 30px;
@@ -1448,6 +1517,7 @@ h6 {
   .verification-process-para.german {
     min-height: 100px;
   }
+  #banner,
   .features-page,
   .about-page,
   .solution-page {
@@ -1500,6 +1570,9 @@ h6 {
   .who-we-are-left img,
   .banner-left img {
     height: 100%;
+  }
+  .one-interface-left .three-veri h2 {
+    width: 60%;
   }
   #clear-dashboard .dashboard {
     left: 0;
@@ -1661,9 +1734,22 @@ h6 {
     padding: 15px 15px 10px;
     order: 3;
   }
-
-  #banner {
-    padding: 60px 0 0;
+  .banner-left {
+    h1 {
+      font-size: 3rem;
+      top: 30%;
+    }
+    .solution-btn {
+      bottom: 35px;
+    }
+  }
+  .one-interface-right {
+    .title-h4 {
+      top: 80px;
+    }
+    .link-buttons {
+      bottom: 50px;
+    }
   }
   .container .row {
     flex-direction: column;
@@ -1699,7 +1785,7 @@ h6 {
   .online-gaming-left,
   .who-we-are-right,
   .contact-top-left,
-  .one-interface,
+  .one-interface-left,
   .kento-ident-right {
     padding: 80px 30px 30px 30px;
     max-width: none;
@@ -1828,13 +1914,12 @@ h6 {
     padding: 0 0 0 10px;
   }
   .innovative-product-features,
-  .one-interface,
   .verification-process-content {
     .title-h2 {
       padding-top: 65px;
     }
   }
-  .one-interface {
+  .one-interface-left {
     .three-veri h2 {
       font-size: 1.4rem;
       width: 70%;
@@ -1909,6 +1994,7 @@ h6 {
       flex: none;
     }
   }
+  #banner,
   .features-page,
   .about-page,
   .solution-page {
