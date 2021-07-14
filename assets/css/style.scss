@@ -1181,7 +1181,8 @@ h6 {
 #banner,
 .features-page,
 .about-page,
-.solution-page {
+.solution-page,
+#contact-form {
   padding: 79px 0 0;
 }
 #our-modular {
@@ -1299,6 +1300,63 @@ h6 {
   display: block;
   width: 100%;
   content: "";
+}
+#contact-form {
+  margin: 0 0 50px;
+  .title-h2 {
+    padding-top: 50px;
+  }
+  .contact-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 25px;
+    .form-control {
+      width: 49%;
+      .input-field {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 3px;
+        border: 1px solid #711e92;
+        color: #711e92;
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-visible {
+          outline: none;
+        }
+      }
+    }
+  }
+  .contact-flex2 {
+    display: flex;
+    flex-direction: column;
+    .form-control {
+      width: 100%;
+      .textarea-field {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 3px;
+        border: 1px solid #711e92;
+        color: #711e92;
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-visible {
+          outline: none;
+        }
+      }
+      .submit-btn {
+        background-color: #711e92;
+        color: #fff;
+        padding: 15px 50px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 3px;
+        margin: 30px 0 0;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 /* Responsive Media Queries */
@@ -1520,7 +1578,8 @@ h6 {
   #banner,
   .features-page,
   .about-page,
-  .solution-page {
+  .solution-page,
+  #contact-form {
     padding: 60px 0 0;
   }
   .auto-ident-page,
@@ -1997,7 +2056,8 @@ h6 {
   #banner,
   .features-page,
   .about-page,
-  .solution-page {
+  .solution-page,
+  #contact-form {
     padding: 60px 0 0;
   }
   .auto-ident-page,
@@ -2029,5 +2089,18 @@ h6 {
   }
   #ident-boxes {
     padding-bottom: 50px;
+  }
+  #contact-form {
+    .contact-flex {
+      flex-direction: column;
+      padding: 0;
+      .form-control {
+        width: 100%;
+        padding: 0 0 25px;
+      }
+    }
+    .title-h2 {
+      padding-top: 30px;
+    }
   }
 }
