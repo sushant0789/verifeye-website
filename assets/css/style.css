@@ -1465,6 +1465,99 @@ h6 {
           transform: scale(1.1);
 }
 
+.auto-ident-page,
+.konto-ident-page,
+.video-ident-page {
+  background-image: url(../images/auto-ident.jpg);
+  background-size: 1170px auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 69px 0 0;
+}
+
+.auto-ident-page .white-bg,
+.konto-ident-page .white-bg,
+.video-ident-page .white-bg {
+  background-color: #fff;
+  padding: 60px 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 150px 0 0;
+}
+
+.auto-ident-page .white-bg .title-h5,
+.konto-ident-page .white-bg .title-h5,
+.video-ident-page .white-bg .title-h5 {
+  padding: 30px 0 0;
+  width: auto;
+}
+
+.auto-ident-page .white-bg .innovative-product-features-ul li,
+.konto-ident-page .white-bg .innovative-product-features-ul li,
+.video-ident-page .white-bg .innovative-product-features-ul li {
+  width: 100%;
+}
+
+.konto-ident-page {
+  background-image: url(../images/konto-ident.jpg);
+}
+
+.video-ident-page {
+  background-image: url(../images/video-ident.jpg);
+}
+
+.width-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.width-flex .mobile-left {
+  width: 60%;
+}
+
+.width-flex .mobile-left .title-h4 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+.width-flex .mobile-img {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.width-flex .mobile-img img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.clearfix {
+  clear: both;
+  height: 1px;
+  display: block;
+  width: 100%;
+  content: "";
+}
+
 /* Responsive Media Queries */
 /* For Ipad */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
@@ -1691,6 +1784,11 @@ h6 {
   .about-page,
   .solution-page {
     padding: 60px 0 0;
+  }
+  .auto-ident-page,
+  .konto-ident-page,
+  .video-ident-page {
+    margin: 60px 0 0;
   }
 }
 
@@ -2195,6 +2293,27 @@ h6 {
   .about-page,
   .solution-page {
     padding: 60px 0 0;
+  }
+  .auto-ident-page,
+  .konto-ident-page,
+  .video-ident-page {
+    margin: 60px 0 0;
+  }
+  .auto-ident-page .white-bg,
+  .konto-ident-page .white-bg,
+  .video-ident-page .white-bg {
+    padding: 30px;
+    margin-top: 70px;
+  }
+  .width-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .width-flex .mobile-left,
+  .width-flex .mobile-img {
+    width: 100%;
   }
   #our-modular {
     padding: 50px 0;
