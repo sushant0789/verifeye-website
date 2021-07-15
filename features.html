@@ -14,6 +14,17 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <link rel="canonical" href="" />
+    <link
+      rel="icon"
+      href="assets/images/verifeye-icon-150x150.png"
+      sizes="32x32"
+    />
+    <link rel="icon" href="assets/images/verifeye-icon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="assets/images/verifeye-icon.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/images/verifeye-icon.png"
+    />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -343,34 +354,6 @@
         </div>
       </div>
     </div>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <video controls class="video">
-          <source src="assets/video/Verifeye.mp4" type="video/mp4" />
-          Your browser does not support the video element. Kindly update it to
-          latest version.
-        </video>
-      </div>
-    </div>
-
-    <!-- The Modal2 -->
-    <div id="myModal2" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close2">&times;</span>
-        <video controls class="video2">
-          <source
-            src="assets/video/verifeye-konto-indent.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video element. Kindly update it to
-          latest version.
-        </video>
-      </div>
-    </div>
 
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -394,64 +377,6 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
-
-      // Get the modal
-      var modal = document.getElementById("myModal");
-
-      // Get the button that opens the modal
-      var btn = document.getElementById("playBtn");
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks the button, open the modal
-      btn.onclick = function () {
-        modal.style.display = "block";
-        document.getElementsByClassName("video")[0].play();
-      };
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
-        document.getElementsByClassName("video")[0].pause();
-      };
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.addEventListener("click", function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-          document.getElementsByClassName("video")[0].pause();
-        }
-      });
-
-      // Get the modalB
-      var modalB = document.getElementById("myModal2");
-
-      // Get the button that opens the modalB
-      var btnB = document.getElementById("playBtn2");
-
-      // Get the <span> element that closes the modalB
-      var spanB = document.getElementsByClassName("close2")[0];
-
-      // When the user clicks the button, open the modal
-      btnB.onclick = function () {
-        modalB.style.display = "block";
-        document.getElementsByClassName("video2")[0].play();
-      };
-
-      // When the user clicks on <span> (x), close the modal
-      spanB.onclick = function () {
-        modalB.style.display = "none";
-        document.getElementsByClassName("video2")[0].pause();
-      };
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.addEventListener("click", function (event) {
-        if (event.target == modalB) {
-          modalB.style.display = "none";
-          document.getElementsByClassName("video2")[0].pause();
-        }
-      });
 
       function toggleClass(elem, className) {
         if (elem.className.indexOf(className) !== -1) {
