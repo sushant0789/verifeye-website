@@ -120,6 +120,9 @@ h6 {
     font-size: 4rem;
     width: 100%;
   }
+  &.de h1 {
+    font-size: 3rem;
+  }
   .solution-btn {
     bottom: 70px;
     position: absolute;
@@ -1246,7 +1249,7 @@ h6 {
 .auto-ident-page,
 .konto-ident-page,
 .video-ident-page {
-  background: url(../images/auto-ident.jpg) center fixed no-repeat;
+  background: url(../images/auto-ident.jpg) center no-repeat;
   background-size: 1170px auto;
   margin: 69px 0 0;
   .white-bg {
@@ -1369,8 +1372,14 @@ h6 {
   .contact-header {
     display: none;
   }
-  .banner-left h1 {
-    font-size: 3rem;
+  .banner-left {
+    h1 {
+      font-size: 3rem;
+    }
+    &.de h1 {
+      font-size: 2rem;
+      top: 47%;
+    }
   }
   .navbar {
     .container .row {
@@ -1799,7 +1808,11 @@ h6 {
   .banner-left {
     h1 {
       font-size: 2.5rem;
-      top: 30%;
+      top: 35%;
+    }
+    &.de h1 {
+      font-size: 1.7rem;
+      top: 40%;
     }
     .solution-btn {
       bottom: 35px;
