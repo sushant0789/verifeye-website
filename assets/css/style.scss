@@ -1095,15 +1095,15 @@ h6 {
 .hide {
   max-height: 0 !important;
 }
-
+.dropdown-flex {
+  padding: 23px 70px 0 0;
+}
 .dropdown {
   background-color: #711e92;
+  position: absolute;
+  padding: 0 10px 0;
 }
-
 .english-flag {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   img {
     width: 35px;
     border-radius: 50%;
@@ -1390,11 +1390,6 @@ h6 {
     order: 2;
     right: 55px;
   }
-  .dropdown {
-    .menu {
-      padding: 0 0 0 10px;
-    }
-  }
   .mobile-menu {
     display: inline-block;
     align-self: flex-end;
@@ -1587,9 +1582,20 @@ h6 {
   .video-ident-page {
     margin: 60px 0 0;
   }
+  .dropdown-flex {
+    position: absolute;
+    padding: 12px 0 0;
+    right: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1112px) and (orientation: landscape) {
+  #nav a {
+    padding: 28px 15px;
+  }
+  .dropdown-flex {
+    padding: 23px 90px 0 0;
+  }
   .solution-ul li br {
     display: none;
   }
@@ -1781,11 +1787,6 @@ h6 {
   .english-flag {
     order: 2;
     right: 55px;
-  }
-  .dropdown {
-    .menu {
-      padding: 0 0 0 10px;
-    }
   }
   .mobile-menu {
     display: inline-block;
@@ -2102,5 +2103,10 @@ h6 {
     .title-h2 {
       padding-top: 30px;
     }
+  }
+  .dropdown-flex {
+    position: absolute;
+    padding: 12px 0 0;
+    right: 0;
   }
 }
