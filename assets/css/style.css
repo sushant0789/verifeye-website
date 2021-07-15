@@ -1455,6 +1455,7 @@ h6 {
 .features-page,
 .about-page,
 .solution-page,
+.usecases-page,
 #contact-form {
   padding: 79px 0 0;
 }
@@ -1715,6 +1716,9 @@ h6 {
   .contact-header {
     display: none;
   }
+  .banner-left h1 {
+    font-size: 3rem;
+  }
   .navbar .container .row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1931,6 +1935,7 @@ h6 {
   .features-page,
   .about-page,
   .solution-page,
+  .usecases-page,
   #contact-form {
     padding: 60px 0 0;
   }
@@ -2165,7 +2170,7 @@ h6 {
             order: 3;
   }
   .banner-left h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     top: 30%;
   }
   .banner-left .solution-btn {
@@ -2462,8 +2467,13 @@ h6 {
   .features-page,
   .about-page,
   .solution-page,
+  .usecases-page,
   #contact-form {
     padding: 60px 0 0;
+  }
+  .usecases-page .online-gaming-left,
+  .solution-page .save-data-left {
+    padding-top: 30px;
   }
   .auto-ident-page,
   .konto-ident-page,
@@ -2518,4 +2528,117 @@ h6 {
     right: 0;
   }
 }
+
+/* about founder css start */
+.testimonials-clean {
+  color: #711e92;
+  padding: 100px 0;
+}
+
+.testimonials-clean p {
+  color: #fff;
+}
+
+.testimonials-clean h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+.testimonials-clean .col-lg-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.testimonials-clean .item .box {
+  padding: 30px;
+  background-color: #711e92;
+  position: relative;
+  min-height: 350px;
+}
+
+.testimonials-clean .item .box:before {
+  content: "";
+  position: absolute;
+  left: 50px;
+  top: -24px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-width: 12px 15px;
+  border-bottom-color: #711e92;
+}
+
+.testimonials-clean .item .author {
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials-clean .item .name {
+  margin-bottom: 2px;
+  color: inherit;
+  font-size: 1.2rem;
+  font-family: "rokkittbold";
+}
+
+.testimonials-clean .item .title {
+  font-size: 0.9rem;
+  color: #711e92;
+}
+
+.testimonials-clean .item .description {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.testimonials-clean .item img {
+  max-width: 130px;
+  max-height: 130px;
+  float: left;
+  margin-right: 12px;
+  margin-top: -5px;
+  border-radius: 999px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .testimonials-clean {
+    padding: 50px 0;
+  }
+  .testimonials-clean .people {
+    margin: 0;
+  }
+  .testimonials-clean h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+  .testimonials-clean .col-lg-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding: 30px 15px 0;
+    position: relative;
+  }
+  .testimonials-clean .item .box {
+    min-height: auto;
+  }
+}
+
+/* about founder css ends */
 /*# sourceMappingURL=style.css.map */

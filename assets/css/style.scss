@@ -1182,6 +1182,7 @@ h6 {
 .features-page,
 .about-page,
 .solution-page,
+.usecases-page,
 #contact-form {
   padding: 79px 0 0;
 }
@@ -1370,6 +1371,9 @@ h6 {
   .solution-ul li br,
   .contact-header {
     display: none;
+  }
+  .banner-left h1 {
+    font-size: 3rem;
   }
   .navbar {
     .container .row {
@@ -1574,6 +1578,7 @@ h6 {
   .features-page,
   .about-page,
   .solution-page,
+  .usecases-page,
   #contact-form {
     padding: 60px 0 0;
   }
@@ -1796,7 +1801,7 @@ h6 {
   }
   .banner-left {
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       top: 30%;
     }
     .solution-btn {
@@ -1854,6 +1859,7 @@ h6 {
       width: 100%;
     }
   }
+
   .verification-process-content.german .title-h2 {
     -ms-word-break: break-all;
     word-break: break-all;
@@ -2058,8 +2064,13 @@ h6 {
   .features-page,
   .about-page,
   .solution-page,
+  .usecases-page,
   #contact-form {
     padding: 60px 0 0;
+  }
+  .usecases-page .online-gaming-left,
+  .solution-page .save-data-left {
+    padding-top: 30px;
   }
   .auto-ident-page,
   .konto-ident-page,
@@ -2110,3 +2121,99 @@ h6 {
     right: 0;
   }
 }
+
+/* about founder css start */
+
+.testimonials-clean {
+  color: #711e92;
+  padding: 100px 0;
+  p {
+    color: #fff;
+  }
+  h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+  }
+  .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+  }
+  .item {
+    .box {
+      padding: 30px;
+      background-color: #711e92;
+      position: relative;
+      min-height: 350px;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 50px;
+        top: -24px;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-width: 12px 15px;
+        border-bottom-color: #711e92;
+      }
+    }
+    .author {
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+    }
+    .name {
+      margin-bottom: 2px;
+      color: inherit;
+      font-size: 1.2rem;
+      font-family: "rokkittbold";
+    }
+    .title {
+      font-size: 0.9rem;
+      color: #711e92;
+    }
+    .description {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 130px;
+      max-height: 130px;
+      float: left;
+      margin-right: 12px;
+      margin-top: -5px;
+      border-radius: 999px;
+      box-sizing: content-box;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonials-clean {
+    padding: 50px 0;
+    .people {
+      margin: 0;
+    }
+    h2 {
+      margin-bottom: 25px;
+      padding-top: 25px;
+      font-size: 24px;
+    }
+    .col-lg-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 30px 15px 0;
+      position: relative;
+    }
+    .item .box {
+      min-height: auto;
+    }
+  }
+}
+
+/* about founder css ends */
