@@ -1544,11 +1544,8 @@ h6 {
 .auto-ident-page,
 .konto-ident-page,
 .video-ident-page {
-  background-image: url(../images/auto-ident.jpg);
+  background: url(../images/auto-ident.jpg) center fixed no-repeat;
   background-size: 1170px auto;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
   margin: 69px 0 0;
 }
 
