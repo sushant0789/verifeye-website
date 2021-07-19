@@ -2719,13 +2719,19 @@ hr.tm-hr-primary {
 .effect-lily img {
   max-width: none;
   width: calc(100% + 50px);
-  opacity: 0.7;
+  opacity: 0.8;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: translate3d(-40px, 0, 0);
           transform: translate3d(-40px, 0, 0);
+}
+
+.effect-lily:hover img {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 
 .tm-new-badge {
@@ -2767,6 +2773,9 @@ hr.tm-hr-primary {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .blogs-page {
+    padding: 100px 0 0;
+  }
   .tm-row .col-md-3 {
     max-width: 50%;
     -webkit-box-flex: 50%;
@@ -2776,6 +2785,9 @@ hr.tm-hr-primary {
 }
 
 @media (max-width: 767px) {
+  .blogs-page {
+    padding: 100px 0 0;
+  }
   .tm-row .col-md-3 {
     max-width: 100%;
     -webkit-box-flex: 100%;
