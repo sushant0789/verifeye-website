@@ -691,7 +691,7 @@ h6 {
 }
 
 .title-h5 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #711e92;
   width: 67%;
   margin: 0;
@@ -2186,7 +2186,9 @@ h6 {
     bottom: 35px;
   }
   .one-interface-right .title-h4 {
-    top: 80px;
+    top: 50px;
+    width: 50%;
+    overflow-wrap: break-word;
   }
   .one-interface-right .link-buttons {
     bottom: 50px;
@@ -2251,18 +2253,12 @@ h6 {
     padding: 0 0 25px;
     width: 100%;
   }
-  .verification-process-content.german .title-h2 {
-    -ms-word-break: break-all;
-    word-break: break-all;
-    /* Non standard for WebKit */
-    word-break: break-word;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
-  }
   .title-h2 {
     font-size: 2.4rem;
     line-height: 36px !important;
+    overflow-wrap: break-word;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .title-h3 {
     font-size: 2rem;
